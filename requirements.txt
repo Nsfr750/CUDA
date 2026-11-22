@@ -1,0 +1,7 @@
+# Dipendenze di cuda_core_monitor.py
+# Nota: Wand richiede ImageMagick installato nel sistema
+PySide6>=6.11.2
+Wand>=0.7.2
+nvidia-ml-py>=13.615.71
+psutil>=6.0
+segno>=1.6
