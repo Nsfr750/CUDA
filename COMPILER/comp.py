@@ -8,12 +8,25 @@ Uso:
 
 Richiede:  pip install nuitka
 """
+import shutil
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+
+TARGET = (3, 14)  # interprete con dipendenze e toolchain Nuitka funzionante
+
+if sys.version_info[:2] != TARGET and sys.platform == "win32":
+    py = shutil.which("py")
+    if py:
+        target = f"-{TARGET[0]}.{TARGET[1]}"
+        print(f"Python {sys.version_info.major}.{sys.version_info.minor} "
+              f"-> rilancio con 'py {target}'...")
+        raise SystemExit(subprocess.run(
+            [py, target, str(Path(__file__).resolve()), *sys.argv[1:]],
+            cwd=ROOT).returncode)
 
 from version import APP_NAME, __version__  # noqa: E402
 

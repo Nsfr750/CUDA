@@ -37,11 +37,9 @@ from widgets import Sparkline
 
 log = get_logger(__name__)
 
-
 def tr(key: str, **kw) -> str:
     """Scorciatoia per ``lang_manager.tr``."""
     return lang_manager.tr(key, **kw)
-
 
 def apply_theme(app: QApplication, theme: str):
     """Applica la palette scura o quella di sistema (chiara)."""

@@ -20,7 +20,6 @@ except Exception:  # ImageMagick mancante o Wand non installato
     MAGICK_VERSION = "non disponibile"
     log.warning("Wand/ImageMagick non disponibile: export report disabilitato")
 
-
 def _build_pdf(width: int, height: int, rgb: bytes) -> bytes:
     """Costruisce un PDF a pagina singola con l'immagine RGB data.
 

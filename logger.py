@@ -4,14 +4,16 @@ Scrive su file rotante in ``logs/cuda_core_monitor.log`` e mostra solo i
 warning (e superiori) sulla console.
 """
 import logging
+import os
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
 LOG_DIR = Path(__file__).resolve().parent / "logs"
-LOG_FILE = LOG_DIR / "cuda_core_monitor.log"
+# Sovrascrivibile via env (es. i test usano logs/tests.log)
+LOG_FILE = Path(os.environ.get(
+    "CUDA_MONITOR_LOG", LOG_DIR / "cuda_core_monitor.log"))
 _FORMAT = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
 _ROOT_NAME = "cuda_core_monitor"
-
 
 def _configure_root() -> logging.Logger:
     """Configura il logger radice dell'applicazione (una sola volta)."""

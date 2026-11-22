@@ -29,7 +29,6 @@ def _qr_pixmap(data: str, size: int = 160):
     except Exception:
         return None
 
-
 def show_sponsor(parent=None):
     """Mostra il dialog 'Sponsor' (modale)."""
     dlg = QDialog(parent)

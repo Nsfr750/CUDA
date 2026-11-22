@@ -5,6 +5,7 @@ import about
 import help as help_mod
 import sponsor
 import update
+import view_log
 from lang.language_manager import lang_manager
 
 tr = lang_manager.tr
@@ -18,6 +19,10 @@ def build_menu(window: QMainWindow) -> QMenuBar:
     """
     bar = window.menuBar()
     bar.clear()
+
+    m_log = bar.addMenu(tr("menu_log"))
+    act_log = m_log.addAction(tr("menu_view_log"))
+    act_log.triggered.connect(lambda: view_log.show_log(window))
 
     m_help = bar.addMenu(tr("menu_help"))
     act_help = m_help.addAction(tr("menu_help_contents"))

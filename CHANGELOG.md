@@ -5,6 +5,16 @@ Tutte le modifiche rilevanti a questo progetto sono documentate in questo file.
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.1.0/)
 e il progetto aderisce al [Semantic Versioning 2.0.0](https://semver.org/lang/it/).
 
+## [1.5.0] - 2026-11-22
+
+### Aggiunto
+
+- Visualizzatore di log nel menu Aiuto (`view_log.py`): contenuto di
+  `logs/cuda_core_monitor.log` in area monospaziata, pulsante Aggiorna,
+  apertura della cartella log e scorrimento automatico in fondo
+- `comp.py` si rilancia automaticamente con `py -3.14` se avviato con un
+  interprete diverso (evita il fallimento toolchain su Python 3.12)
+
 ## [1.4.3] - 2026-11-22
 
 ### Modificato

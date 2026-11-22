@@ -1,6 +1,6 @@
 # Struttura del progetto
 
-```
+```text
 CUDA/
 ├── main.py                  # entry point (chiama cuda_core_monitor.main)
 ├── cuda_core_monitor.py     # GUI principale: MainWindow, temi, icona, avvisi
@@ -13,6 +13,7 @@ CUDA/
 ├── about.py                 # dialog Informazioni
 ├── sponsor.py               # dialog Sponsor (PayPal, Monero, QR)
 ├── update.py                # controllo aggiornamenti (UPDATE_URL)
+├── view_log.py              # dialog visualizzazione log
 ├── logger.py                # logging su file rotante (logs/)
 ├── version.py               # versione SemVer 2.0.0 e nome app
 ├── lang/

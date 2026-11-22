@@ -1,0 +1,28 @@
+2026-11-22 15:30:07,385 [DEBUG] cuda_core_monitor.gpu_backend: GPU 0: Fake GPU, core=6144 (NVML)
+2026-11-22 15:30:07,385 [INFO] cuda_core_monitor.gpu_backend: GPU rilevate: 1
+2026-11-22 15:30:07,387 [ERROR] cuda_core_monitor.gpu_backend: Modulo 'nvidia-ml-py' non installato (pip install nvidia-ml-py).
+2026-11-22 15:30:07,388 [DEBUG] cuda_core_monitor.gpu_backend: GPU 0: Fake GPU, core=6144 (SM x core/SM (stima))
+2026-11-22 15:30:07,388 [INFO] cuda_core_monitor.gpu_backend: GPU rilevate: 1
+2026-11-22 15:30:07,389 [DEBUG] cuda_core_monitor.gpu_backend: GPU 0: Fake GPU, core=None (n/d)
+2026-11-22 15:30:07,389 [INFO] cuda_core_monitor.gpu_backend: GPU rilevate: 1
+2026-11-22 15:30:07,390 [DEBUG] cuda_core_monitor.gpu_backend: GPU 0: Fake GPU, core=6144 (NVML)
+2026-11-22 15:30:07,390 [INFO] cuda_core_monitor.gpu_backend: GPU rilevate: 1
+2026-11-22 15:30:07,391 [DEBUG] cuda_core_monitor.gpu_backend: GPU 0: Fake GPU, core=6144 (NVML)
+2026-11-22 15:30:07,391 [INFO] cuda_core_monitor.gpu_backend: GPU rilevate: 1
+2026-11-22 15:30:07,392 [DEBUG] cuda_core_monitor.gpu_backend: GPU 0: Fake GPU, core=6144 (NVML)
+2026-11-22 15:30:07,392 [INFO] cuda_core_monitor.gpu_backend: GPU rilevate: 1
+2026-11-22 15:30:07,394 [WARNING] cuda_core_monitor.gpu_backend: Backend _boom non disponibile: driver assente
+2026-11-22 15:30:07,524 [DEBUG] cuda_core_monitor.gpu_backend: GPU 0: NVIDIA GeForce GT 710, core=None (n/d)
+2026-11-22 15:30:07,524 [INFO] cuda_core_monitor.gpu_backend: GPU rilevate: 1
+2026-11-22 15:30:07,541 [DEBUG] cuda_core_monitor.gpu_backend: Campionamento base fallito: Not Supported
+2026-11-22 15:30:07,541 [DEBUG] cuda_core_monitor.gpu_backend: Lettura potenza fallita: Not Supported
+2026-11-22 15:30:07,541 [DEBUG] cuda_core_monitor.gpu_backend: Lettura clock fallita: Not Supported
+2026-11-22 15:30:07,541 [DEBUG] cuda_core_monitor.gpu_backend: nvmlDeviceGetComputeRunningProcesses fallita: Unversioned function called and the pyNVML version does not match the NVML lib version. Either use matching pyNVML and NVML lib versions or use a versioned function such as nvmlDeviceGetComputeRunningProcesses_v2
+2026-11-22 15:30:07,541 [DEBUG] cuda_core_monitor.gpu_backend: nvmlDeviceGetGraphicsRunningProcesses fallita: Unversioned function called and the pyNVML version does not match the NVML lib version. Either use matching pyNVML and NVML lib versions or use a versioned function such as nvmlDeviceGetGraphicsRunningProcesses_v2
+2026-11-22 15:30:07,542 [DEBUG] cuda_core_monitor.gpu_backend: Campionamento base fallito: Not Supported
+2026-11-22 15:30:07,542 [DEBUG] cuda_core_monitor.gpu_backend: Lettura potenza fallita: Not Supported
+2026-11-22 15:30:07,542 [DEBUG] cuda_core_monitor.gpu_backend: Lettura clock fallita: Not Supported
+2026-11-22 15:30:07,542 [DEBUG] cuda_core_monitor.gpu_backend: nvmlDeviceGetComputeRunningProcesses fallita: Unversioned function called and the pyNVML version does not match the NVML lib version. Either use matching pyNVML and NVML lib versions or use a versioned function such as nvmlDeviceGetComputeRunningProcesses_v2
+2026-11-22 15:30:07,542 [DEBUG] cuda_core_monitor.gpu_backend: nvmlDeviceGetGraphicsRunningProcesses fallita: Unversioned function called and the pyNVML version does not match the NVML lib version. Either use matching pyNVML and NVML lib versions or use a versioned function such as nvmlDeviceGetGraphicsRunningProcesses_v2
+2026-11-22 15:30:07,713 [INFO] cuda_core_monitor.report: Report esportato in C:\TMP\pytest-of-Nsfr750\pytest-18\test_render_report_png0\report.png
+2026-11-22 15:30:07,831 [INFO] cuda_core_monitor.report: Report esportato in C:\TMP\pytest-of-Nsfr750\pytest-18\test_render_report_pdf0\report.pdf

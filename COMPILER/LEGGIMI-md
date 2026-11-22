@@ -1,0 +1,17 @@
+# Per Compilare
+
+```bash
+py -3.12 COMPILER/comp.py
+```
+
+# Pulizia Cache
+
+```bash
+rmdir /s /q build
+rmdir /s /q dist
+rmdir /s /q __pycache__
+rmdir /s /q *.spec
+rmdir /s /q *.egg-info
+py -3.12 COMPILER/clean_pycache.py
+```
+

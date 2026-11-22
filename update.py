@@ -40,7 +40,6 @@ def is_newer(remote: str, local: str) -> bool:
     n = max(len(r), len(l))
     return r + (0,) * (n - len(r)) > l + (0,) * (n - len(l))
 
-
 def fetch_latest_version(timeout: int = 5) -> tuple[str, str]:
     """Scarica la versione più recente.
 

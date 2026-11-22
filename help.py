@@ -7,7 +7,6 @@ from widgets import close_button
 
 tr = lang_manager.tr
 
-
 def show_help(parent=None):
     """Mostra il dialog di aiuto (modale)."""
     dlg = QDialog(parent)

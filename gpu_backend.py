@@ -30,7 +30,6 @@ CORES_PER_SM = {
     (10, 0): 128, (12, 0): 128,
 }
 
-
 @dataclass
 class GpuInfo:
     index: int

@@ -14,7 +14,6 @@ def close_button(text: str) -> QPushButton:
                       "font-weight:bold;padding:6px 18px;")
     return btn
 
-
 class Sparkline(QWidget):
     """Grafico sparkline a linea singola con riempimento.
 

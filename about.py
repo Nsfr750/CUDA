@@ -14,7 +14,6 @@ WEBSITE = "https://www.tuxxle.org"
 ORGANIZATION = "Tuxxle"
 COPYRIGHT = "© Copyright 2024-2026 Nsfr750 - All rights reserved."
 
-
 def show_about(parent=None):
     """Mostra il dialog 'Informazioni' (modale)."""
     dlg = QDialog(parent)
