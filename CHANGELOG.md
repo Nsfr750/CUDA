@@ -5,6 +5,14 @@ Tutte le modifiche rilevanti a questo progetto sono documentate in questo file.
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.1.0/)
 e il progetto aderisce al [Semantic Versioning 2.0.0](https://semver.org/lang/it/).
 
+## [1.4.1] - 2026-11-22
+
+### Aggiunto
+
+- Script di compilazione Nuitka `COMPILER/comp.py` (standalone o
+  `--onefile`, plugin PySide6, metadati di versione, torch escluso)
+- `nuitka` in `requirements-dev.txt`
+
 ## [1.4.0] - 2026-11-22
 
 ### Aggiunto

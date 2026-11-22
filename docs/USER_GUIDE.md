@@ -74,6 +74,18 @@ GPU come PNG oppure PDF (richiede ImageMagick installato nel sistema).
 I log sono scritti in `logs/cuda_core_monitor.log` (rotazione: 3 file da
 1 MB). In console vengono mostrati solo warning ed errori.
 
+## Compilazione (Nuitka)
+
+```bash
+pip install nuitka
+python COMPILER/comp.py            # build standalone in dist/
+python COMPILER/comp.py --onefile  # eseguibile singolo
+```
+
+La build include il plugin PySide6 e i metadati di versione; PyTorch è
+escluso (fallback opzionale). ImageMagick e le dipendenze runtime di Wand
+restano esterni.
+
 ## Test
 
 ```bash
