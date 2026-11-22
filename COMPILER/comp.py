@@ -32,6 +32,7 @@ args = [
     "--assume-yes-for-downloads",       # toolchain (MinGW) automatico
     "--remove-output",                  # pulisce build precedenti
     "--nofollow-import-to=torch",       # fallback opzionale: escluso
+    "--include-data-files=assets/icon.png=assets/icon.png",
     f"--output-dir={ROOT / 'dist'}",
     f"--output-filename={APP_NAME.replace(' ', '')}.exe",
     f"--company-name={COMPANY}",

@@ -16,6 +16,7 @@ import csv
 import datetime
 import sys
 from collections import deque
+from pathlib import Path
 
 from PySide6.QtCore import Qt, QTimer, QSettings
 from PySide6.QtGui import QIcon, QPainter, QColor, QPixmap, QPalette
@@ -64,8 +65,13 @@ def apply_theme(app: QApplication, theme: str):
         app.setPalette(app.style().standardPalette())
 
 
+ICON_PATH = Path(__file__).resolve().parent / "assets" / "icon.png"
+
+
 def make_icon() -> QIcon:
-    """Disegna l'icona dell'app: una griglia di 'core' in stile NVIDIA."""
+    """Icona dell'app da ``assets/icon.png`` (fallback: disegnata via QPainter)."""
+    if ICON_PATH.is_file():
+        return QIcon(str(ICON_PATH))
     pm = QPixmap(64, 64)
     pm.fill(QColor("#0f1419"))
     p = QPainter(pm)

@@ -5,6 +5,14 @@ Tutte le modifiche rilevanti a questo progetto sono documentate in questo file.
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.1.0/)
 e il progetto aderisce al [Semantic Versioning 2.0.0](https://semver.org/lang/it/).
 
+## [1.4.2] - 2026-11-22
+
+### Modificato
+
+- Icona dell'applicazione caricata da `assets/icon.png` (finestra e tray),
+  con fallback sull'icona disegnata via QPainter se il file manca;
+  inclusa nella build Nuitka via `--include-data-files`
+
 ## [1.4.1] - 2026-11-22
 
 ### Aggiunto

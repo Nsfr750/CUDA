@@ -21,6 +21,8 @@ CUDA/
 │   └── translations.py      # stringhe it/en (nessun JSON)
 ├── COMPILER/
 │   └── comp.py              # script di compilazione Nuitka (dist/)
+├── assets/
+│   └── icon.png             # icona dell'applicazione
 ├── tests/
 │   ├── test_backend.py      # backend NVML con pynvml finto
 │   ├── test_report.py       # PDF puro + render PNG/PDF
