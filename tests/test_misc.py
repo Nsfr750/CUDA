@@ -21,9 +21,45 @@ def test_get_logger():
 def test_update_parse_e_confronto():
     import update
     assert update.parse_version("1.2.3") == (1, 2, 3)
+    assert update.parse_version("v1.2.3") == (1, 2, 3)
     assert update.is_newer("1.4.0", "1.3.9")
     assert not update.is_newer("1.3.0", "1.3.0")
     assert not update.is_newer("1.2", "1.2.1")
+
+
+def test_update_fetch_github_json(monkeypatch):
+    import io
+    import update
+
+    class _Resp:
+        def read(self):
+            return b'{"tag_name": "v9.9.9", "html_url": "https://x/r"}'
+        def __enter__(self):
+            return self
+        def __exit__(self, *a):
+            return False
+
+    monkeypatch.setattr(update.urllib.request, "urlopen",
+                        lambda *a, **k: _Resp())
+    v, page = update.fetch_latest_version()
+    assert v == "9.9.9" and page == "https://x/r"
+
+
+def test_update_fetch_file_testo(monkeypatch):
+    import update
+
+    class _Resp:
+        def read(self):
+            return b"9.8.7\n"
+        def __enter__(self):
+            return self
+        def __exit__(self, *a):
+            return False
+
+    monkeypatch.setattr(update.urllib.request, "urlopen",
+                        lambda *a, **k: _Resp())
+    v, page = update.fetch_latest_version()
+    assert v == "9.8.7" and page == ""
 
 
 def test_sparkline(qapp=None):

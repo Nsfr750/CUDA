@@ -5,6 +5,14 @@ Tutte le modifiche rilevanti a questo progetto sono documentate in questo file.
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.1.0/)
 e il progetto aderisce al [Semantic Versioning 2.0.0](https://semver.org/lang/it/).
 
+## [1.4.3] - 2026-11-22
+
+### Modificato
+
+- `update.py` configurato per l'API GitHub Releases (`Nsfr750/CUDA`) con
+  parsing `tag_name` (prefisso `v` gestito), link alla release nel dialog
+  e fallback su file di testo `x.y.z` per sorgenti non GitHub
+
 ## [1.4.2] - 2026-11-22
 
 ### Modificato

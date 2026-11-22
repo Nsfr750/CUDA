@@ -47,8 +47,10 @@ il conteggio dei core e le metriche live risultano `n/d`.
 ## Menu Aiuto
 
 - **Guida**: riepilogo delle funzionalità.
-- **Controlla aggiornamenti**: confronta la versione installata con quella
-  pubblicata a `UPDATE_URL` in `update.py` (vuoto = disabilitato).
+- **Controlla aggiornamenti**: confronta la versione installata con
+  l'ultima release GitHub di `Nsfr750/CUDA` (`UPDATE_URL` in `update.py`;
+  richiede una release pubblica, altrimenti punta l'URL a un file di
+  testo `x.y.z`).
 - **Informazioni**: versione, autore, licenza e sito.
 - **Sponsor**: donazioni via PayPal o Monero (con QR code).
 
